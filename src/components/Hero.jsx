@@ -18,7 +18,7 @@ const Hero = () => {
       }
     }, 5000);
     return () => clearInterval(interval);
-  }, [isHovered]);
+  }, [isHovered, slides.length]);
 
   const slides = [
     {
