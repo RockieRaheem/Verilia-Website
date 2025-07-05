@@ -1,0 +1,6 @@
+.*
+*.md
+*.log
+node_modules/
+public/
+src/
