@@ -1,4 +1,4 @@
-.gitignore
 node_modules
-*.md
-.idea
+dist
+.env
+.DS_Store
