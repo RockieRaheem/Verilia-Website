@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Solutions from "./components/Solutions";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navigation />
       <Hero />
       <About />
+      <Solutions />
     </>
   );
 }
