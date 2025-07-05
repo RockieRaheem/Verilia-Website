@@ -6,8 +6,8 @@ import {
   BiCloud,
   BiData,
   BiLockAlt,
-  BiMobile,
   BiShield,
+  BiRocket,
 } from "react-icons/bi";
 
 const Services = () => {
@@ -58,14 +58,14 @@ const Services = () => {
     },
     {
       icon: <BiLockAlt size={36} className="text-primary" />,
-      title: "Blockchain Solutions",
+      title: "Blockchain Development",
       description:
         "Secure decentralized applications for transparent operations",
       features: ["Smart contracts", "NFT platforms", "Supply chain tracking"],
     },
     {
       icon: <BiShield size={36} className="text-primary" />,
-      title: "Cybersecurity",
+      title: "Cybersecurity Services",
       description:
         "Protecting your digital assets with enterprise-grade security",
       features: [
@@ -77,31 +77,30 @@ const Services = () => {
   ];
 
   return (
-    <section id="solutions" className="py-6">
+    <section id="services" className="py-6 bg-light">
       <Container>
         <Row className="justify-content-center mb-6">
           <Col md={10} className="text-center">
-            <h2 className="text-primary">Technology Solutions</h2>
+            <h2 className="text-primary">Our Technology Services</h2>
             <div className="underline mx-auto"></div>
             <p className="lead mt-4">
-              We deliver cutting-edge solutions across multiple domains,
-              leveraging the latest technologies to solve complex business
-              challenges
+              Comprehensive services across the technology stack, designed to
+              help businesses innovate, scale, and secure their digital future
             </p>
           </Col>
         </Row>
 
         <Row className="g-5">
-          {services.map((solution, index) => (
+          {services.map((service, index) => (
             <Col lg={4} md={6} key={index}>
-              <div className="h-100 p-5 bg-light rounded-4 shadow-sm border-start border-3 border-primary">
-                <div className="mb-4">{solution.icon}</div>
-                <h3 className="mb-3">{solution.title}</h3>
-                <p className="text-secondary mb-4">{solution.description}</p>
+              <div className="h-100 p-5 bg-white rounded-4 shadow-sm border-top border-3 border-primary">
+                <div className="mb-4">{service.icon}</div>
+                <h3 className="mb-3">{service.title}</h3>
+                <p className="text-secondary mb-4">{service.description}</p>
                 <ul className="list-unstyled">
-                  {solution.features.map((feature, idx) => (
+                  {service.features.map((feature, idx) => (
                     <li key={idx} className="mb-2 d-flex">
-                      <span className="text-primary me-2">✓</span>
+                      <span className="text-primary me-2">•</span>
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -115,15 +114,17 @@ const Services = () => {
           <Col className="bg-primary text-white p-6 rounded-4 text-center">
             <Row className="align-items-center">
               <Col md={8} className="text-md-start mb-4 mb-md-0">
-                <h3 className="mb-3">Ready to Transform Your Business?</h3>
+                <h3 className="mb-3">
+                  Transform Your Business with Technology
+                </h3>
                 <p className="mb-0">
-                  Our team of experts is ready to collaborate on your next
-                  technology initiative
+                  Partner with us to leverage cutting-edge solutions tailored to
+                  your specific needs
                 </p>
               </Col>
               <Col md={4} className="text-md-end">
                 <button className="btn btn-light btn-lg px-4 py-3 fw-bold">
-                  Schedule Consultation
+                  <BiRocket className="me-2" /> Get Started
                 </button>
               </Col>
             </Row>

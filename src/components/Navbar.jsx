@@ -33,7 +33,7 @@ const Navigation = () => {
             <Nav.Link href="#about" onClick={() => setExpanded(false)}>
               About
             </Nav.Link>
-            <Nav.Link href="#Services" onClick={() => setExpanded(false)}>
+            <Nav.Link href="#services" onClick={() => setExpanded(false)}>
               Services
             </Nav.Link>
             <Nav.Link href="#team" onClick={() => setExpanded(false)}>
