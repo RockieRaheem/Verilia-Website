@@ -1,7 +1,9 @@
+import React from "react";
 import "./App.css";
+import Navigation from "./components/Navbar";
 
 function App() {
-  return console.log("Hello, Verilia!");
+  return <Navigation />;
 }
 
 export default App;
