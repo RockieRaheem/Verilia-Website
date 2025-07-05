@@ -10,16 +10,6 @@ const Hero = () => {
     setIndex(selectedIndex);
   };
 
-  // Auto-advance slides every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (!isHovered) {
-        setIndex((prevIndex) => (prevIndex + 1) % slides.length);
-      }
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [isHovered, slides.length]);
-
   const slides = [
     {
       title: "AI & Machine Learning",
@@ -42,6 +32,15 @@ const Hero = () => {
       img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     },
   ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isHovered) {
+        setIndex((prevIndex) => (prevIndex + 1) % slides.length);
+      }
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [isHovered, slides.length]);
 
   return (
     <section
