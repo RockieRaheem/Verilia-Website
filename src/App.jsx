@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Solutions from "./components/Solutions";
+import Services from "./components/Services";
 import Team from "./components/Team";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Navigation />
       <Hero />
       <About />
-      <Solutions />
+      <Services />
       <Team />
     </>
   );
