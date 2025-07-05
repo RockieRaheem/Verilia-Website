@@ -1,6 +1,4 @@
-.*
+.gitignore
+node_modules
 *.md
-*.log
-node_modules/
-public/
-src/
+.idea
