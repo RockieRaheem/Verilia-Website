@@ -53,11 +53,8 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mb-2">
-                <a
-                  href="#solutions"
-                  className="text-white text-decoration-none"
-                >
-                  Solutions
+                <a href="#services" className="text-white text-decoration-none">
+                  Services
                 </a>
               </li>
               <li>
@@ -69,7 +66,7 @@ const Footer = () => {
           </Col>
 
           <Col lg={3} md={4}>
-            <h4 className="mb-4">Solutions</h4>
+            <h4 className="mb-4">Services</h4>
             <ul className="list-unstyled">
               <li className="mb-2">
                 <a href="#" className="text-white text-decoration-none">
@@ -99,7 +96,7 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li className="mb-3 d-flex align-items-start">
                 <BiMap className="text-primary mt-1 me-3" size={20} />
-                <span>1Kampala Uganda</span>
+                <span>Kampala Uganda</span>
               </li>
               <li className="mb-3 d-flex align-items-start">
                 <BiEnvelope className="text-primary mt-1 me-3" size={20} />
