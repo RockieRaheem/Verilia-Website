@@ -1,8 +1,8 @@
-// src/components/Navbar.jsx
 import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { BiMenu } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/verilialogo.jpg"; // Import your logo
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false);
@@ -18,12 +18,25 @@ const Navigation = () => {
       className="shadow-sm py-3"
     >
       <Container>
-        <Link
-          to="/"
-          className="navbar-brand fw-bold fs-3 text-primary"
-          onClick={closeNavbar}
-        >
-          VERILIA
+        <Link to="/" className="navbar-brand" onClick={closeNavbar}>
+          <div className="d-flex align-items-center">
+            <img
+              src={logo}
+              alt="Verilia Logo"
+              style={{ height: "40px", marginRight: "14px" }} // Add right margin to logo
+            />
+            <span
+              className="text-primary fw-bold"
+              style={{
+                fontSize: "1.8rem",
+                letterSpacing: "2px",
+                marginBottom: "0",
+                paddingTop: "2px", // Adjust vertical alignment if needed
+              }}
+            >
+              VERILIA
+            </span>
+          </div>
         </Link>
 
         <Navbar.Toggle
