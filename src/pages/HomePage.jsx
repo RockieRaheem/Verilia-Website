@@ -122,8 +122,7 @@ const ParallaxShowcase = () => (
         Experience the Future
       </h2>
       <p className="lead mb-4">
-        Our solutions blend{" "}
-        <span style={{ color: "#93c5fd" }}>AI</span>,{" "}
+        Our solutions blend <span style={{ color: "#93c5fd" }}>AI</span>,{" "}
         <span style={{ color: "#93c5fd" }}>Cloud</span>, and{" "}
         <span style={{ color: "#93c5fd" }}>Emerging Tech</span> to create
         seamless digital experiences.
@@ -144,23 +143,23 @@ const testimonials = [
   {
     quote:
       "Verilia transformed our business with their innovative AI solutions. Their team is truly world-class!",
-    name: "Sarah M.",
-    company: "FinTech Corp",
-    img: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Verilian L.",
+    company: "Elith Pharmacy",
+    img: "https://media.istockphoto.com/id/2173327283/photo/happy-son-hugging-his-mom-during-a-family-breakfast-in-a-brazilian-home.jpg?s=612x612&w=is&k=20&c=UEB5CIFW4h2wRH_xt04dhkBEitdRRJ_aJodRNpHPhFY=",
   },
   {
     quote:
       "The cloud migration was seamless and efficient. We saw immediate improvements in performance.",
-    name: "James K.",
-    company: "HealthSync",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "Verilian M.",
+    company: "Verilia Website",
+    img: "https://cdn.pixabay.com/photo/2021/01/04/07/33/man-5886719_640.jpg",
   },
   {
     quote:
       "Their creativity and technical expertise are unmatched. Highly recommended for any tech project.",
-    name: "Priya S.",
-    company: "EduNext",
-    img: "https://randomuser.me/api/portraits/women/68.jpg",
+    name: "Verilian L.",
+    company: "FinTech",
+    img: "https://cdn.pixabay.com/photo/2018/03/18/21/09/people-3238357_640.jpg",
   },
 ];
 
