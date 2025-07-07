@@ -1,9 +1,13 @@
+// src/components/Navbar.jsx
 import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { BiMenu } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false);
+
+  const closeNavbar = () => setExpanded(false);
 
   return (
     <Navbar
@@ -14,9 +18,13 @@ const Navigation = () => {
       className="shadow-sm py-3"
     >
       <Container>
-        <Navbar.Brand href="#home" className="fw-bold fs-3 text-primary">
+        <Link
+          to="/"
+          className="navbar-brand fw-bold fs-3 text-primary"
+          onClick={closeNavbar}
+        >
           VERILIA
-        </Navbar.Brand>
+        </Link>
 
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -27,21 +35,21 @@ const Navigation = () => {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home" onClick={() => setExpanded(false)}>
+            <Link to="/" className="nav-link" onClick={closeNavbar}>
               Home
-            </Nav.Link>
-            <Nav.Link href="#about" onClick={() => setExpanded(false)}>
+            </Link>
+            <Link to="/about" className="nav-link" onClick={closeNavbar}>
               About
-            </Nav.Link>
-            <Nav.Link href="#services" onClick={() => setExpanded(false)}>
+            </Link>
+            <Link to="/services" className="nav-link" onClick={closeNavbar}>
               Services
-            </Nav.Link>
-            <Nav.Link href="#team" onClick={() => setExpanded(false)}>
+            </Link>
+            <Link to="/team" className="nav-link" onClick={closeNavbar}>
               Team
-            </Nav.Link>
-            <Nav.Link href="#contact" onClick={() => setExpanded(false)}>
+            </Link>
+            <Link to="/contact" className="nav-link" onClick={closeNavbar}>
               Contact
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
