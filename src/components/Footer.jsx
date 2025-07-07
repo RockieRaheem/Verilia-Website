@@ -1,3 +1,4 @@
+// src/components/Footer.jsx
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
@@ -9,12 +10,13 @@ import {
   BiLogoGithub,
   BiLogoInstagram,
 } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="pt-6 pb-4 bg-dark text-white">
+    <footer className="pt-6 pb-4 bg-dark text-white">
       <Container>
         <Row className="g-5 mb-5">
           <Col lg={4}>
@@ -43,24 +45,40 @@ const Footer = () => {
             <h4 className="mb-4">Company</h4>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="#home" className="text-white text-decoration-none">
+                <Link
+                  to="/"
+                  className="text-white text-decoration-none"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#about" className="text-white text-decoration-none">
+                <Link
+                  to="/about"
+                  className="text-white text-decoration-none"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#services" className="text-white text-decoration-none">
+                <Link
+                  to="/services"
+                  className="text-white text-decoration-none"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#team" className="text-white text-decoration-none">
+                <Link
+                  to="/team"
+                  className="text-white text-decoration-none"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Team
-                </a>
+                </Link>
               </li>
             </ul>
           </Col>
@@ -69,24 +87,40 @@ const Footer = () => {
             <h4 className="mb-4">Services</h4>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="#" className="text-white text-decoration-none">
+                <Link
+                  to="/services"
+                  className="text-white text-decoration-none"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Software Development
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-white text-decoration-none">
+                <Link
+                  to="/services"
+                  className="text-white text-decoration-none"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   AI & Machine Learning
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a href="#" className="text-white text-decoration-none">
+                <Link
+                  to="/services"
+                  className="text-white text-decoration-none"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Cloud Solutions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <Link
+                  to="/services"
+                  className="text-white text-decoration-none"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Blockchain Technology
-                </a>
+                </Link>
               </li>
             </ul>
           </Col>
@@ -96,15 +130,15 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li className="mb-3 d-flex align-items-start">
                 <BiMap className="text-primary mt-1 me-3" size={20} />
-                <span>Kampala Uganda</span>
+                <span>123 Innovation Park, Bangalore, India 560001</span>
               </li>
               <li className="mb-3 d-flex align-items-start">
                 <BiEnvelope className="text-primary mt-1 me-3" size={20} />
-                <span>verilia@gmail.com</span>
+                <span>contact@verilia.com</span>
               </li>
               <li className="d-flex align-items-start">
                 <BiPhone className="text-primary mt-1 me-3" size={20} />
-                <span>+256761238019</span>
+                <span>+91 98765 43210</span>
               </li>
             </ul>
           </Col>
