@@ -1,8 +1,6 @@
-// src/pages/HomePage.jsx
 import React from "react";
 import Hero from "../components/Hero";
 
-// Decorative Feature Section 1: Animated Stats
 const StatsSection = () => {
   React.useEffect(() => {
     const animateCounters = () => {
@@ -76,7 +74,7 @@ const StatsSection = () => {
           </div>
         </div>
       </div>
-      {/* Decorative SVG */}
+
       <svg
         style={{ position: "absolute", bottom: 0, left: 0, width: "100%" }}
         height="80"
@@ -94,7 +92,6 @@ const StatsSection = () => {
   );
 };
 
-// Decorative Feature Section 2: Parallax Showcase
 const ParallaxShowcase = () => (
   <section
     style={{
@@ -138,7 +135,6 @@ const ParallaxShowcase = () => (
   </section>
 );
 
-// Decorative Feature Section 3: Animated Testimonials Carousel
 const testimonials = [
   {
     quote:
@@ -240,7 +236,6 @@ const TestimonialsCarousel = () => {
   );
 };
 
-// Decorative Feature Section 4: Call to Action with Glassmorphism
 const GlassCTA = () => (
   <section
     style={{
@@ -276,7 +271,7 @@ const GlassCTA = () => (
         </a>
       </div>
     </div>
-    {/* Decorative SVG */}
+
     <svg
       style={{ position: "absolute", top: 0, right: 0, width: "100%" }}
       height="80"

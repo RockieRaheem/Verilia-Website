@@ -54,7 +54,6 @@ const Hero = () => {
         position: "relative",
       }}
     >
-      {/* Animated background elements */}
       <div
         className="position-absolute top-0 start-0 w-100 h-100"
         style={{
@@ -64,7 +63,6 @@ const Hero = () => {
 
       <Container className="position-relative z-1">
         <Row className="align-items-center g-5">
-          {/* Left Column - Text Content */}
           <Col lg={6} className="mb-5 mb-lg-0">
             <div className="mb-4">
               <span className="badge bg-blue-500 bg-opacity-20 text-blue-300 px-3 py-2 fs-6">
@@ -103,7 +101,6 @@ const Hero = () => {
             </div>
           </Col>
 
-          {/* Right Column - Image Slider */}
           <Col lg={6} className="ps-lg-5">
             <div
               className="position-relative"
@@ -137,7 +134,6 @@ const Hero = () => {
                 ))}
               </Carousel>
 
-              {/* Custom Controls */}
               <button
                 className="position-absolute top-50 start-0 translate-middle-y bg-dark bg-opacity-50 text-white p-3 rounded-circle border-0"
                 style={{ zIndex: 10, left: "10px" }}
@@ -156,7 +152,6 @@ const Hero = () => {
                 <BiRightArrow size={24} />
               </button>
 
-              {/* Indicators */}
               <div className="d-flex justify-content-center mt-4">
                 {slides.map((_, idx) => (
                   <button

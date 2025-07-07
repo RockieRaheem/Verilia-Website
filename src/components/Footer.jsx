@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
@@ -25,7 +24,6 @@ const Footer = () => {
         overflow: "hidden",
       }}
     >
-      {/* Decorative SVG wave */}
       <svg
         style={{
           position: "absolute",
@@ -228,7 +226,6 @@ const Footer = () => {
         </Row>
       </Container>
 
-      {/* Decorative floating icons */}
       <div
         style={{
           position: "absolute",

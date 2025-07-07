@@ -1,4 +1,3 @@
-// src/components/TeamPreview.jsx
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { BiLogoLinkedin } from "react-icons/bi";

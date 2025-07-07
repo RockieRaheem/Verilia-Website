@@ -1,4 +1,3 @@
-// src/pages/ContactPage.jsx
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { BiEnvelope, BiPhone, BiMap } from "react-icons/bi";
@@ -35,7 +34,6 @@ const ContactPage = () => {
         overflow: "hidden",
       }}
     >
-      {/* Decorative SVG Top */}
       <svg
         style={{
           position: "absolute",
@@ -176,7 +174,7 @@ const ContactPage = () => {
                   Send Message
                 </Button>
               </Form>
-              {/* Decorative floating shapes */}
+
               <div
                 style={{
                   position: "absolute",
@@ -268,7 +266,7 @@ const ContactPage = () => {
                 <p className="mb-1">Monday - Friday: 9:00 AM - 6:00 PM</p>
                 <p className="mb-0">Saturday: 10:00 AM - 2:00 PM</p>
               </div>
-              {/* Decorative floating icons */}
+
               <div
                 style={{
                   position: "absolute",
@@ -298,7 +296,6 @@ const ContactPage = () => {
         </Row>
       </Container>
 
-      {/* Decorative SVG Bottom */}
       <svg
         style={{
           position: "absolute",

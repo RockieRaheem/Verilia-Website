@@ -1,7 +1,5 @@
-// src/pages/ServicesPage.jsx
 import React from "react";
 
-// Hero Section for Services
 const ServicesHero = () => (
   <section
     style={{
@@ -17,10 +15,12 @@ const ServicesHero = () => (
         Our <span style={{ color: "#fff176" }}>Services</span>
       </h1>
       <p className="lead mx-auto" style={{ maxWidth: 700, fontSize: "1.3rem" }}>
-        From AI-powered solutions to cloud transformation and custom software, Verilia delivers future-ready technology that drives real business results.
+        From AI-powered solutions to cloud transformation and custom software,
+        Verilia delivers future-ready technology that drives real business
+        results.
       </p>
     </div>
-    {/* Decorative SVG */}
+
     <svg
       style={{ position: "absolute", bottom: 0, left: 0, width: "100%" }}
       height="80"
@@ -37,7 +37,6 @@ const ServicesHero = () => (
   </section>
 );
 
-// Beautiful Services Grid
 const services = [
   {
     icon: "🤖",
@@ -103,18 +102,24 @@ const ServicesGrid = () => (
                 transition: "transform 0.3s, box-shadow 0.3s",
                 willChange: "transform",
               }}
-              onMouseEnter={e => {
-                e.currentTarget.style.transform = "translateY(-10px) scale(1.04)";
-                e.currentTarget.style.boxShadow = "0 16px 32px rgba(37,99,235,0.18)";
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform =
+                  "translateY(-10px) scale(1.04)";
+                e.currentTarget.style.boxShadow =
+                  "0 16px 32px rgba(37,99,235,0.18)";
               }}
-              onMouseLeave={e => {
+              onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "none";
                 e.currentTarget.style.boxShadow = "";
               }}
             >
-              <div style={{ fontSize: "2.7rem", marginBottom: "1rem" }}>{service.icon}</div>
+              <div style={{ fontSize: "2.7rem", marginBottom: "1rem" }}>
+                {service.icon}
+              </div>
               <h5 className="fw-bold mb-2">{service.title}</h5>
-              <p className="mb-0" style={{ color: "#f1f5f9" }}>{service.desc}</p>
+              <p className="mb-0" style={{ color: "#f1f5f9" }}>
+                {service.desc}
+              </p>
             </div>
           </div>
         ))}
@@ -123,7 +128,6 @@ const ServicesGrid = () => (
   </section>
 );
 
-// Glassmorphism CTA
 const GlassCTA = () => (
   <section
     style={{
@@ -147,7 +151,8 @@ const GlassCTA = () => (
           Ready to Transform Your Business?
         </h2>
         <p className="lead mb-4" style={{ color: "#e0e7ef" }}>
-          Let’s talk about how Verilia can help you innovate, grow, and succeed with technology.
+          Let’s talk about how Verilia can help you innovate, grow, and succeed
+          with technology.
         </p>
         <a
           href="/contact"
@@ -158,7 +163,7 @@ const GlassCTA = () => (
         </a>
       </div>
     </div>
-    {/* Decorative SVG */}
+
     <svg
       style={{ position: "absolute", top: 0, right: 0, width: "100%" }}
       height="80"

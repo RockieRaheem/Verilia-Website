@@ -1,7 +1,5 @@
-// src/pages/AboutPage.jsx
 import React from "react";
 
-// Hero About Section
 const AboutHero = () => (
   <section
     style={{
@@ -22,7 +20,7 @@ const AboutHero = () => (
         magical, human, and empowering.
       </p>
     </div>
-    {/* Decorative SVG */}
+
     <svg
       style={{ position: "absolute", bottom: 0, left: 0, width: "100%" }}
       height="80"
@@ -39,7 +37,6 @@ const AboutHero = () => (
   </section>
 );
 
-// Decorative Feature: Animated "Why Choose Us" Cards
 const WhyChooseUs = () => (
   <section
     style={{
@@ -120,7 +117,6 @@ const WhyChooseUs = () => (
   </section>
 );
 
-// Decorative Feature: Glassmorphism Call to Action
 const GlassCTA = () => (
   <section
     style={{
@@ -158,7 +154,7 @@ const GlassCTA = () => (
         </a>
       </div>
     </div>
-    {/* Decorative SVG */}
+
     <svg
       style={{ position: "absolute", top: 0, right: 0, width: "100%" }}
       height="80"
@@ -175,7 +171,6 @@ const GlassCTA = () => (
   </section>
 );
 
-// Decorative Feature: Animated "Meet Verilia" Avatars
 const MeetVerilia = () => (
   <section
     style={{

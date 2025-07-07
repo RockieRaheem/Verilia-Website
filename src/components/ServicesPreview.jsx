@@ -1,4 +1,3 @@
-// src/components/ServicesPreview.jsx
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { BiCodeCurly, BiBrain, BiCloud, BiRocket } from "react-icons/bi";

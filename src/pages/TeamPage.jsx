@@ -1,6 +1,5 @@
 import React from "react";
 
-// 20 Black team member images from Unsplash (public domain, hotlink-friendly)
 const teamMembers = [
   {
     name: "Verilian 1",
@@ -144,7 +143,6 @@ const teamMembers = [
   },
 ];
 
-// Decorative Hero Section
 const TeamHero = () => (
   <section
     style={{
@@ -164,7 +162,7 @@ const TeamHero = () => (
         together. Get to know the people who make Verilia extraordinary!
       </p>
     </div>
-    {/* Decorative SVG */}
+
     <svg
       style={{ position: "absolute", bottom: 0, left: 0, width: "100%" }}
       height="80"
@@ -181,7 +179,6 @@ const TeamHero = () => (
   </section>
 );
 
-// Interactive Team Grid
 const TeamGrid = () => (
   <section
     style={{
@@ -276,7 +273,6 @@ const TeamGrid = () => (
   </section>
 );
 
-// Glassmorphism CTA
 const GlassCTA = () => (
   <section
     style={{
@@ -312,7 +308,7 @@ const GlassCTA = () => (
         </a>
       </div>
     </div>
-    {/* Decorative SVG */}
+
     <svg
       style={{ position: "absolute", top: 0, right: 0, width: "100%" }}
       height="80"
