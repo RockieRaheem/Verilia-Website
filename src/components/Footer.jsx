@@ -11,6 +11,7 @@ import {
   BiLogoInstagram,
 } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/verilialogo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -50,7 +51,7 @@ const Footer = () => {
           <Col lg={4} className="mb-4 mb-lg-0">
             <div className="d-flex align-items-center mb-3">
               <img
-                src="../assets/images/verilialogo.jpg"
+                src={logo}
                 alt="Verilia Logo"
                 style={{
                   width: 48,
