@@ -130,15 +130,15 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li className="mb-3 d-flex align-items-start">
                 <BiMap className="text-primary mt-1 me-3" size={20} />
-                <span>123 Innovation Park, Bangalore, India 560001</span>
+                <span>Verilia, Kampala, Uganda</span>
               </li>
               <li className="mb-3 d-flex align-items-start">
                 <BiEnvelope className="text-primary mt-1 me-3" size={20} />
-                <span>contact@verilia.com</span>
+                <span>verilia@gmail.com</span>
               </li>
               <li className="d-flex align-items-start">
                 <BiPhone className="text-primary mt-1 me-3" size={20} />
-                <span>+91 98765 43210</span>
+                <span>+256761238019</span>
               </li>
             </ul>
           </Col>
