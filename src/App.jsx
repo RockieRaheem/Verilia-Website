@@ -14,10 +14,12 @@ function App() {
   return (
     <>
       <Navigation />
-      <Hero />
-      <About />
-      <Services />
-      <Team />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/team" element={<Team />} />
+      </Routes>
       <Footer />
     </>
   );
