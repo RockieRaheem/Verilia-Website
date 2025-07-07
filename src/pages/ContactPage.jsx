@@ -110,7 +110,7 @@ const ContactPage = () => {
 
                 <div className="ratio ratio-16x9">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0048211000003!2d77.597277!3d12.971599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17baa8194715%3A0x1f1e7fc1e4a6d07c!2sBangalore%20International%20Tech%20Park!5e0!3m2!1sen!2sin!4v1633345300000!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63820.99937386352!2d32.52801029999999!3d0.3475964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0a30c7e2db%3A0x7d4b0f86a3c0d3b6!2sKampala%2C%20Uganda!5e0!3m2!1sen!2sus!4v1718032198482!5m2!1sen!2sus"
                     style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"
