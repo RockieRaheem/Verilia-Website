@@ -56,21 +56,34 @@ const ContactPage = () => {
         ></path>
       </svg>
 
-      <Container style={{ position: "relative", zIndex: 1, paddingTop: "7rem", paddingBottom: "4rem" }}>
+      <Container
+        style={{
+          position: "relative",
+          zIndex: 1,
+          paddingTop: "7rem",
+          paddingBottom: "4rem",
+        }}
+      >
         <Row className="justify-content-center mb-5">
           <Col md={8} className="text-center">
-            <h2 className="display-4 fw-bold" style={{ color: "#2563eb", letterSpacing: "1px" }}>
+            <h2
+              className="display-4 fw-bold"
+              style={{ color: "#2563eb", letterSpacing: "1px" }}
+            >
               Get in <span style={{ color: "#60a5fa" }}>Touch</span>
             </h2>
-            <div style={{
-              width: 60,
-              height: 5,
-              background: "linear-gradient(90deg, #2563eb 0%, #60a5fa 100%)",
-              borderRadius: 3,
-              margin: "1rem auto 0 auto"
-            }}></div>
+            <div
+              style={{
+                width: 60,
+                height: 5,
+                background: "linear-gradient(90deg, #2563eb 0%, #60a5fa 100%)",
+                borderRadius: 3,
+                margin: "1rem auto 0 auto",
+              }}
+            ></div>
             <p className="lead mt-4" style={{ color: "#334155" }}>
-              Have questions or want to collaborate? Reach out to our team and we’ll get back to you as soon as possible.
+              Have questions or want to collaborate? Reach out to our team and
+              we’ll get back to you as soon as possible.
             </p>
           </Col>
         </Row>
@@ -91,7 +104,10 @@ const ContactPage = () => {
                 Send Us a Message
               </h3>
               {submitted && (
-                <div className="alert alert-success text-center fw-bold" role="alert">
+                <div
+                  className="alert alert-success text-center fw-bold"
+                  role="alert"
+                >
                   Thank you for your message! We will get back to you soon.
                 </div>
               )}
@@ -104,7 +120,7 @@ const ContactPage = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    placeholder="e.g. Jane Doe"
+                    placeholder="e.g. Verilian 1"
                   />
                 </Form.Group>
 
@@ -116,7 +132,7 @@ const ContactPage = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="e.g. you@email.com"
+                    placeholder="e.g. verilian@email.com"
                   />
                 </Form.Group>
 
@@ -150,7 +166,8 @@ const ContactPage = () => {
                   type="submit"
                   className="w-100 py-3 fw-bold"
                   style={{
-                    background: "linear-gradient(90deg, #2563eb 0%, #60a5fa 100%)",
+                    background:
+                      "linear-gradient(90deg, #2563eb 0%, #60a5fa 100%)",
                     border: "none",
                     fontSize: "1.15rem",
                     letterSpacing: "1px",
@@ -160,12 +177,30 @@ const ContactPage = () => {
                 </Button>
               </Form>
               {/* Decorative floating shapes */}
-              <div style={{
-                position: "absolute", top: 10, right: 10, opacity: 0.13, fontSize: 60, pointerEvents: "none"
-              }}>✉️</div>
-              <div style={{
-                position: "absolute", bottom: 10, left: 10, opacity: 0.10, fontSize: 48, pointerEvents: "none"
-              }}>💬</div>
+              <div
+                style={{
+                  position: "absolute",
+                  top: 10,
+                  right: 10,
+                  opacity: 0.13,
+                  fontSize: 60,
+                  pointerEvents: "none",
+                }}
+              >
+                ✉️
+              </div>
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: 10,
+                  left: 10,
+                  opacity: 0.1,
+                  fontSize: 48,
+                  pointerEvents: "none",
+                }}
+              >
+                💬
+              </div>
             </div>
           </Col>
 
@@ -173,7 +208,8 @@ const ContactPage = () => {
             <div
               className="p-5 rounded-4 shadow-lg h-100"
               style={{
-                background: "linear-gradient(120deg, #2563eb11 0%, #60a5fa11 100%)",
+                background:
+                  "linear-gradient(120deg, #2563eb11 0%, #60a5fa11 100%)",
                 border: "1.5px solid #e0e7ef",
                 position: "relative",
                 overflow: "hidden",
@@ -184,7 +220,9 @@ const ContactPage = () => {
               </h3>
 
               <div className="mb-5">
-                <h4 className="mb-3" style={{ color: "#60a5fa" }}>Office Location</h4>
+                <h4 className="mb-3" style={{ color: "#60a5fa" }}>
+                  Office Location
+                </h4>
                 <div className="d-flex align-items-start mb-3">
                   <BiMap className="text-primary mt-1 me-3" size={24} />
                   <div>
@@ -204,7 +242,9 @@ const ContactPage = () => {
               </div>
 
               <div className="mb-4">
-                <h4 className="mb-3" style={{ color: "#60a5fa" }}>Contact Details</h4>
+                <h4 className="mb-3" style={{ color: "#60a5fa" }}>
+                  Contact Details
+                </h4>
                 <div className="d-flex align-items-start mb-3">
                   <BiEnvelope className="text-primary mt-1 me-3" size={24} />
                   <div>
@@ -222,17 +262,37 @@ const ContactPage = () => {
               </div>
 
               <div>
-                <h4 className="mb-3" style={{ color: "#60a5fa" }}>Business Hours</h4>
+                <h4 className="mb-3" style={{ color: "#60a5fa" }}>
+                  Business Hours
+                </h4>
                 <p className="mb-1">Monday - Friday: 9:00 AM - 6:00 PM</p>
                 <p className="mb-0">Saturday: 10:00 AM - 2:00 PM</p>
               </div>
               {/* Decorative floating icons */}
-              <div style={{
-                position: "absolute", top: 10, left: 10, opacity: 0.10, fontSize: 54, pointerEvents: "none"
-              }}>📍</div>
-              <div style={{
-                position: "absolute", bottom: 10, right: 10, opacity: 0.10, fontSize: 48, pointerEvents: "none"
-              }}>📞</div>
+              <div
+                style={{
+                  position: "absolute",
+                  top: 10,
+                  left: 10,
+                  opacity: 0.1,
+                  fontSize: 54,
+                  pointerEvents: "none",
+                }}
+              >
+                📍
+              </div>
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: 10,
+                  right: 10,
+                  opacity: 0.1,
+                  fontSize: 48,
+                  pointerEvents: "none",
+                }}
+              >
+                📞
+              </div>
             </div>
           </Col>
         </Row>
