@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { BiMenu } from "react-icons/bi";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/verilialogo.jpg";
@@ -10,14 +10,6 @@ const Navigation = () => {
   const location = useLocation();
 
   const closeNavbar = () => setExpanded(false);
-
-  const navLinks = [
-    { to: "/", label: "Home" },
-    { to: "/about", label: "About" },
-    { to: "/services", label: "Services" },
-    { to: "/team", label: "Team" },
-    { to: "/contact", label: "Contact" },
-  ];
 
   return (
     <Navbar
@@ -96,47 +88,105 @@ const Navigation = () => {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center gap-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`nav-link verilia-nav-link ${
-                  location.pathname === link.to ? "active" : ""
-                }`}
+            <Link
+              to="/"
+              className={`nav-link verilia-nav-link ${
+                location.pathname === "/" ? "active" : ""
+              }`}
+              onClick={closeNavbar}
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className={`nav-link verilia-nav-link ${
+                location.pathname === "/about" ? "active" : ""
+              }`}
+              onClick={closeNavbar}
+            >
+              About
+            </Link>
+            <NavDropdown
+              title="Solutions"
+              id="solutions-dropdown"
+              className="verilia-nav-link"
+            >
+              <NavDropdown.Item
+                as={Link}
+                to="/solutions/web"
                 onClick={closeNavbar}
-                style={{
-                  position: "relative",
-                  fontWeight: 600,
-                  fontSize: "1.1rem",
-                  color: location.pathname === link.to ? "#2563eb" : "#334155",
-                  padding: "0.5rem 1.1rem",
-                  borderRadius: "1.2rem",
-                  transition: "color 0.2s, background 0.2s",
-                  background:
-                    location.pathname === link.to
-                      ? "linear-gradient(90deg, #2563eb11 0%, #60a5fa11 100%)"
-                      : "transparent",
-                  overflow: "hidden",
-                }}
               >
-                {link.label}
-                <span
-                  className="verilia-underline"
-                  style={{
-                    display: "block",
-                    height: "3px",
-                    borderRadius: "2px",
-                    background:
-                      location.pathname === link.to
-                        ? "linear-gradient(90deg, #2563eb 0%, #60a5fa 100%)"
-                        : "transparent",
-                    width: location.pathname === link.to ? "100%" : "0%",
-                    transition: "width 0.3s cubic-bezier(.4,2,.6,1)",
-                    marginTop: "4px",
-                  }}
-                />
-              </Link>
-            ))}
+                Web Solutions
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/solutions/mobile"
+                onClick={closeNavbar}
+              >
+                Mobile Solutions
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/solutions/enterprise"
+                onClick={closeNavbar}
+              >
+                Enterprise Solutions
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown
+              title="Technologies"
+              id="technologies-dropdown"
+              className="verilia-nav-link"
+            >
+              <NavDropdown.Item
+                as={Link}
+                to="/technologies/react"
+                onClick={closeNavbar}
+              >
+                React
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/technologies/node"
+                onClick={closeNavbar}
+              >
+                Node.js
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/technologies/aws"
+                onClick={closeNavbar}
+              >
+                AWS
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Link
+              to="/services"
+              className={`nav-link verilia-nav-link ${
+                location.pathname === "/services" ? "active" : ""
+              }`}
+              onClick={closeNavbar}
+            >
+              Services
+            </Link>
+            <Link
+              to="/team"
+              className={`nav-link verilia-nav-link ${
+                location.pathname === "/team" ? "active" : ""
+              }`}
+              onClick={closeNavbar}
+            >
+              Team
+            </Link>
+            <Link
+              to="/contact"
+              className={`nav-link verilia-nav-link ${
+                location.pathname === "/contact" ? "active" : ""
+              }`}
+              onClick={closeNavbar}
+            >
+              Contact
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
